@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inventario-config
+data:
+  SPRING_RABBITMQ_HOST: rabbitmq-service
+  SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/inventario_db
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-service:8761/eureka/
